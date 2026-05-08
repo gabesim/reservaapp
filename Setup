@@ -1,0 +1,4 @@
+cd ~/Documents/reserva-app
+git commit -m "Initial commit"
+git remote add origin https://github.com/SEU_USUARIO/SEU_REPO.git
+git push -u origin main
