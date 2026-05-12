@@ -8,9 +8,13 @@
 <meta name="robots" content="noindex, nofollow" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<!-- Google Fonts: async load to avoid render blocking -->
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" /></noscript>
+<!-- Preload hero background image -->
 <link rel="preload" as="image" href="fachada-frontal.jpg" />
-<script src="https://cdn.tailwindcss.com"></script>
+<!-- Tailwind: defer to avoid render blocking -->
+<script defer src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
     theme: {
@@ -61,7 +65,7 @@
 </style>
 </head>
 <body class="antialiased">
-
+<main>
 <!-- WhatsApp Floating Button -->
 <a href="https://wa.me/5592999810505?text=Ol%C3%A1%2C%20vi%20a%20apresenta%C3%A7%C3%A3o%20Reserva%20APP%20e%20gostaria%20de%20receber%20o%20dossi%C3%AA%20executivo."
    target="_blank" rel="noopener"
@@ -344,6 +348,7 @@
   </div>
 </section>
 
+</main>
 <footer class="bg-forestDeep text-ivory/40 py-12 px-6 lg:px-12 text-sm">
   <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-6">
     <div class="flex items-center gap-3">
